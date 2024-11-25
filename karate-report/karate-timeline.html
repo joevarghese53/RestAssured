@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/DeleteUser[1:6]","start":1732453750704,"end":1732453751086,"title":"features\/DeleteUser[1:6] 18:39:10.704-18:39:11.086"},{"id":2,"group":1,"content":"features\/UpdateUser[1:7]","start":1732453751922,"end":1732453752722,"title":"features\/UpdateUser[1:7] 18:39:11.922-18:39:12.722"},{"id":3,"group":1,"content":"features\/GetAllUsers[1:3]","start":1732453751301,"end":1732453751457,"title":"features\/GetAllUsers[1:3] 18:39:11.301-18:39:11.457"},{"id":4,"group":1,"content":"features\/GetUserDetails[1:6]","start":1732453751549,"end":1732453751827,"title":"features\/GetUserDetails[1:6] 18:39:11.549-18:39:11.827"},{"id":5,"group":1,"content":"features\/CreateUser[1:6]","start":1732453749134,"end":1732453750165,"title":"features\/CreateUser[1:6] 18:39:09.134-18:39:10.165 user is able to create user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

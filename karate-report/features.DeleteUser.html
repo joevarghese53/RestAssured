@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("bd231bf1-170a-40fd-8d35-6c9d71e94de9",{name:"91949"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>features.DeleteUser</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-11-24 06:39:11 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span></span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/DeleteUser.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Update user</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>381</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def AllUsersResponse = call read(&quot;classpath://features/GetAllUsers.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">166</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.GetAllUsers</div>
+      </div>
+      <div class="time-cell passed">158</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url host</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">156</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.6">18:39:10.714 request:
+1 &gt; GET https://gorest.co.in/public/v2/users
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:39:10.867 response time in milliseconds: 153
+1 &lt; 200
+1 &lt; Date: Sun, 24 Nov 2024 13:09:08 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;d6610dea08c9a2ce4c6a4ba045ea2413&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 293
+1 &lt; x-pagination-total: 2922
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 6859c7cf-62ac-435c-ba7f-878eeecde334
+1 &lt; x-runtime: 0.052592
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=x2H7q4Ky2MiKF8KZL3a9HMM3M3wxiQrk3Z6IEiUgZRJxUTkIVRTv5JmsWbnl8GkAmBXm1Wi2bxqxSB2onxyJnoYCuSDZkBsR%2FHqCEuC36R6bVnKPgkecb3VaRNIB0XY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8e79a1b9da601191-COK
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=6816&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=999&amp;delivery_rate=175403&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=84ac9970dfbf5e86&amp;ts=127&amp;x=0&quot;
+[{&quot;id&quot;:7541064,&quot;name&quot;:&quot;Tanushri Trivedi&quot;,&quot;email&quot;:&quot;tanushri_trivedi@herman-ebert.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:7541063,&quot;name&quot;:&quot;Agnivesh Mehra CPA&quot;,&quot;email&quot;:&quot;agnivesh_mehra_cpa@ziemann.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:7541062,&quot;name&quot;:&quot;Hari Nayar&quot;,&quot;email&quot;:&quot;nayar_hari@reilly.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:7541061,&quot;name&quot;:&quot;Ekaksh Devar&quot;,&quot;email&quot;:&quot;ekaksh_devar@bode-keebler.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:7541060,&quot;name&quot;:&quot;Chetan Sethi&quot;,&quot;email&quot;:&quot;chetan_sethi@stiedemann-towne.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:7541059,&quot;name&quot;:&quot;Ms. Gaurang Kaur&quot;,&quot;email&quot;:&quot;kaur_ms_gaurang@goyette-williamson.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:7541058,&quot;name&quot;:&quot;Dhana Rana&quot;,&quot;email&quot;:&quot;rana_dhana@smitham.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:7541057,&quot;name&quot;:&quot;Rev. Chandramohan Nambeesan&quot;,&quot;email&quot;:&quot;chandramohan_nambeesan_rev@zieme.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:7541056,&quot;name&quot;:&quot;Mohini Chaturvedi&quot;,&quot;email&quot;:&quot;chaturvedi_mohini@corwin.test&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:7541055,&quot;name&quot;:&quot;Dhanvin Namboothiri&quot;,&quot;email&quot;:&quot;namboothiri_dhanvin@emard-hills.example&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">18:39:10.870 [print] [
+  {
+    &quot;id&quot;: 7541064,
+    &quot;name&quot;: &quot;Tanushri Trivedi&quot;,
+    &quot;email&quot;: &quot;tanushri_trivedi@herman-ebert.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 7541063,
+    &quot;name&quot;: &quot;Agnivesh Mehra CPA&quot;,
+    &quot;email&quot;: &quot;agnivesh_mehra_cpa@ziemann.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 7541062,
+    &quot;name&quot;: &quot;Hari Nayar&quot;,
+    &quot;email&quot;: &quot;nayar_hari@reilly.example&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 7541061,
+    &quot;name&quot;: &quot;Ekaksh Devar&quot;,
+    &quot;email&quot;: &quot;ekaksh_devar@bode-keebler.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 7541060,
+    &quot;name&quot;: &quot;Chetan Sethi&quot;,
+    &quot;email&quot;: &quot;chetan_sethi@stiedemann-towne.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 7541059,
+    &quot;name&quot;: &quot;Ms. Gaurang Kaur&quot;,
+    &quot;email&quot;: &quot;kaur_ms_gaurang@goyette-williamson.test&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 7541058,
+    &quot;name&quot;: &quot;Dhana Rana&quot;,
+    &quot;email&quot;: &quot;rana_dhana@smitham.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 7541057,
+    &quot;name&quot;: &quot;Rev. Chandramohan Nambeesan&quot;,
+    &quot;email&quot;: &quot;chandramohan_nambeesan_rev@zieme.test&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 7541056,
+    &quot;name&quot;: &quot;Mohini Chaturvedi&quot;,
+    &quot;email&quot;: &quot;chaturvedi_mohini@corwin.test&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 7541055,
+    &quot;name&quot;: &quot;Dhanvin Namboothiri&quot;,
+    &quot;email&quot;: &quot;namboothiri_dhanvin@emard-hills.example&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url host</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Bearer 6d6a140f387f2dadfe9e0ae1c212766f5e2a5beb3bcfe146e46dd93cc719f86e&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/users/&quot; + AllUsersResponse.response[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">213</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">18:39:10.873 request:
+2 &gt; DELETE https://gorest.co.in/public/v2/users/7541064
+2 &gt; Authorization: Bearer 6d6a140f387f2dadfe9e0ae1c212766f5e2a5beb3bcfe146e46dd93cc719f86e
+2 &gt; Host: gorest.co.in
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.13)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:39:11.085 response time in milliseconds: 212
+2 &lt; 204
+2 &lt; Date: Sun, 24 Nov 2024 13:09:09 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Cache-Control: no-cache
+2 &lt; referrer-policy: strict-origin-when-cross-origin
+2 &lt; vary: Origin
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-download-options: noopen
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; x-permitted-cross-domain-policies: none
+2 &lt; x-ratelimit-limit: 90
+2 &lt; x-ratelimit-remaining: 89
+2 &lt; x-ratelimit-reset: 1
+2 &lt; x-request-id: 7bab6c8b-4481-48ba-adda-4d5b62bc8168
+2 &lt; x-runtime: 0.128128
+2 &lt; x-xss-protection: 0
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=0nPdl1kI8SJkbfL8HnQHWosA6U9fD%2BLSk%2BSfg6%2FTXwxKjCHPVni7wQeWf%2Bfyt9U%2BrrbpZz3LD2YVT6L%2BbD%2FfS8PGPxDVSlUcGaz5TzAUB8bwwoDFuehe0p4uJ%2Frxcds%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 8e79a1baca6ac91f-COK
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+2 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=6654&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=1098&amp;delivery_rate=188845&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=be21db132157398f&amp;ts=193&amp;x=0&quot;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">18:39:11.086 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
